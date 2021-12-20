@@ -82,10 +82,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Test.h" />
+    <ClInclude Include="src\ArrowEngine\Application.h" />
+    <ClInclude Include="src\ArrowEngine\Core.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Test.cpp" />
+    <ClCompile Include="src\ArrowEngine\Application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
