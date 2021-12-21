@@ -1,14 +1,18 @@
 #pragma once
+#include "Core.h"
 
 namespace ArrowEngine {
 
-	class __declspec(dllexport) Application
+	class AE_API Application
 	{
 	public:
 		Application();
 		virtual ~Application();
+
 		void Run();
 	};
+
+	Application* CreateApplication();
 }
 
 
