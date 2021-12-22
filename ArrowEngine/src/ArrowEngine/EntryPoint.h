@@ -6,6 +6,7 @@ extern ArrowEngine::Application* ArrowEngine::CreateApplication();
 
 int main(int argc, char** argv)
 {
+	ArrowEngine::Log::Init();
 	auto app = ArrowEngine::CreateApplication();
 	app->Run();
 	delete app;
