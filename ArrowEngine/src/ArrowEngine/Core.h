@@ -7,5 +7,6 @@
 		#define AE_API __declspec(dllimport)
 	#endif // DEBUG
 #else
+	#define AE_API
 	//#error Platform not support!s
 #endif //  AE_PLATFORM_WINDOWS

@@ -2,3 +2,6 @@
 /[Bb]in/
 /[Bb]in-int/
 /.vs
+
+#cmake
+/[Oo]ut/
