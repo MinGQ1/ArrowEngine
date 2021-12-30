@@ -7,7 +7,8 @@ extern ArrowEngine::Application* ArrowEngine::CreateApplication();
 int main(int argc, char** argv)
 {
 	ArrowEngine::Log::Init();
-	AE_CORE_WARN("Hello Log!");
+	AE_CORE_WARN("Hello Warn!");
+	AE_CORE_ERROR("Hello Error!");
 	auto app = ArrowEngine::CreateApplication();
 	app->Run();
 	delete app;
