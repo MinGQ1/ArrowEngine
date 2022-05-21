@@ -1,6 +1,7 @@
 #vs cache
 /[Bb]in/
 /[Bb]in-int/
+/[Bb]uild/
 /.vs
 
 #cmake
