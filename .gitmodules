@@ -1,3 +1,6 @@
 [submodule "ArrowEngine/External/spdlog"]
 	path = ArrowEngine/External/spdlog
 	url = git@github.com:gabime/spdlog.git
+[submodule "ArrowEngine/External/glfw"]
+	path = ArrowEngine/External/glfw
+	url = git@github.com:glfw/glfw.git

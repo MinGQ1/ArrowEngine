@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Include dir
 include_directories("${PROJECT_SOURCE_DIR}/ArrowEngine/External/spdlog/include")
+include_directories("${PROJECT_SOURCE_DIR}/ArrowEngine/External/glfw/include")
 include_directories("${PROJECT_SOURCE_DIR}/ArrowEngine/Src")
 
 # Platform preprocessor defination

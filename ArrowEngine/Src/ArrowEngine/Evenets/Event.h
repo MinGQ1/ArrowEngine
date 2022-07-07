@@ -1,9 +1,8 @@
 #pragma once
-
 #include<ArrowEngine/Core/Core.h>
 
-namespace ArrowEngine {
-
+namespace ArrowEvent {
+	#definde EVENT_ID
 	enum class EventType
 	{
 		None = 0,
@@ -12,8 +11,8 @@ namespace ArrowEngine {
 		KeyTyped,
 	};
 
-	class EventQueue
+	class EventHandler
 	{
-		
+		m_EventHandler
 	};
 }
