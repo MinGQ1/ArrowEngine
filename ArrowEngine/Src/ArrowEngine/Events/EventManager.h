@@ -2,13 +2,6 @@
 #include<ArrowEngine/Core/Core.h>
 
 namespace ArrowEngine {
-	enum class EventType
-	{
-		None = 0,
-		KeyPressed,
-		KeyRelease,
-		KeyTyped,
-	};
 
 	class EventListener
 	{
@@ -23,7 +16,8 @@ namespace ArrowEngine {
 	public:
 		virtual ~EeventManager() = default;
 
-		virtual void Subscribe(int eventID, EventListener listener);
-		virtual void Unsubscribe(int eventID, EventListener listener);
+		virtual void Subscribe(EventID eventID, EventListener listener);
+		virtual void Unsubscribe(EventID eventID, EventListener listener);
+		virtual void NotifyWithMessage(EventID eventID);
 	};
 }
