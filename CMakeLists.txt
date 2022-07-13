@@ -10,10 +10,14 @@ set (CMAKE_MODULE_PATH
 	"${CMAKE_SOURCE_DIR}/CMake"
 )
 
+set(ARROW_SOURCE_DIR ${PROJECT_SOURCE_DIR})
+
+include(PreConfigure)
+
 # Include dir
-include_directories("${PROJECT_SOURCE_DIR}/ArrowEngine/External/spdlog/include")
-include_directories("${PROJECT_SOURCE_DIR}/ArrowEngine/External/glfw/include")
-include_directories("${PROJECT_SOURCE_DIR}/ArrowEngine/Src")
+include_directories("${ARROW_SOURCE_DIR}/ArrowEngine/External/spdlog/include")
+include_directories("${ARROW_SOURCE_DIR}/ArrowEngine/External/glfw/include")
+include_directories("${ARROW_SOURCE_DIR}/ArrowEngine/Src")
 
 # Platform preprocessor defination
 IF(WIN32)

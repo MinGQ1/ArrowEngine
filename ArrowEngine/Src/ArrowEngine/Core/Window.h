@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ArrowPlatform.h"
-#include "ArrowEngine/Events/Event.h"
+#include "ArrowEngine/Events/EventManager.h"
 
 namespace ArrowEngine {
 	class WindowEventManager: public EeventManager
@@ -11,8 +11,6 @@ namespace ArrowEngine {
 	class Window
 	{
 	public:
-		typedef 
-
 		Window(UInt32 width, UInt32 height);
 		virtual ~Window();
 

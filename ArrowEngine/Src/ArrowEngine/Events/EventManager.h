@@ -1,5 +1,7 @@
 #pragma once
-#include<ArrowEngine/Core/Core.h>
+
+#include "ArrowEngine/Core/Core.h"
+#include "EventMessage.h"
 
 namespace ArrowEngine {
 
@@ -18,6 +20,6 @@ namespace ArrowEngine {
 
 		virtual void Subscribe(EventID eventID, EventListener listener);
 		virtual void Unsubscribe(EventID eventID, EventListener listener);
-		virtual void NotifyWithMessage(EventID eventID);
+		virtual void Notify(EventMessage msg);
 	};
 }
